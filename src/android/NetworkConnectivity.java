@@ -23,7 +23,7 @@ public class NetworkConnectivity extends CordovaPlugin {
     }
 
     private void network(String message, CallbackContext callbackContext) {
-		cordova.getActivity().runUiOnThread(new Runnable(){
+		cordova.getActivity().runOnUiThread(new Runnable(){
 			public void run(){
 				final android.widget.Toast toast = android.widget.Toast.makeText(
 					cordova.getActivity().getWindow().getContext(),
