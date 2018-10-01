@@ -28,7 +28,7 @@ public class NetworkConnectivity extends CordovaPlugin {
 				final android.widget.Toast toast = android.widget.Toast.makeText(
 					cordova.getActivity().getWindow().getContext(),
 					message,
-					android.widget.Toast.LENGTH_LONG,
+					android.widget.Toast.LENGTH_LONG
 				);
 				toast.show();
 			}
