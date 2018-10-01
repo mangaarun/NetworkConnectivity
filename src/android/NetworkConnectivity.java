@@ -1,4 +1,4 @@
-package ionic-check-network-connectivity;
+package ionic.check.network.connectivity;
 
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CallbackContext;
