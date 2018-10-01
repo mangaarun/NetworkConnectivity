@@ -3,7 +3,7 @@
 	<name>
 		NetworkConnectivity
 	</name>
-	<js-module name="network" src="www/NetworkConnectivity.js">
+	<js-module name="NetworkConnectivity" src="www/NetworkConnectivity.js">
 		<clobbers target="network" />
 	</js-module>
 	<platform name="android">
