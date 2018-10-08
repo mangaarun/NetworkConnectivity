@@ -1,9 +1,9 @@
 {
-  "name": "NetworkConnectivity",
+  "name": "network-connectivity",
   "version": "0.0.1",
   "description": "This plugin checks the status of network connectivity",
   "cordova": {
-    "id": "ionic-check-network-connectivity",
+    "id": "network-connectivity",
     "platforms": [
       "android",
       "ios"
