@@ -4,7 +4,7 @@
 		NetworkConnectivity
 	</name>
 	<js-module name="NetworkConnectivity" src="www/NetworkConnectivity.js">
-		<clobbers target="NetworkConnectivity" />
+		<clobbers target="network" />
 	</js-module>
 	<platform name="android">
 		<config-file parent="/*" target="res/xml/config.xml">

@@ -28,6 +28,7 @@ public class NetworkConnectivity extends CordovaPlugin {
         return false;
     }
 
+<<<<<<< HEAD
    
 
     private void isConnected(CallbackContext callbackContext){
@@ -43,6 +44,23 @@ public class NetworkConnectivity extends CordovaPlugin {
         }
         catch (Exception e) {
             callbackContext.error(e.getMessage());
+=======
+    private void network(String message, CallbackContext callbackContext) {
+		cordova.getActivity().runOnUiThread(new Runnable(){
+			public void run(){
+				final android.widget.Toast toast = android.widget.Toast.makeText(
+					cordova.getActivity().getWindow().getContext(),
+					message,
+					android.widget.Toast.LENGTH_LONG
+				);
+				toast.show();
+			}
+		});
+        if (message != null && message.length() > 0) {
+            callbackContext.success(message);
+        } else {
+            callbackContext.error("Expected one non-empty string argument.");
+>>>>>>> 2dcd5fef5adf6ec8695959e88633dd74c87ca770
         }
     }
 }
